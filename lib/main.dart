@@ -1,3 +1,6 @@
+import 'package:default_getx/app/modules/splash/splash_binding.dart';
+import 'package:default_getx/app/modules/splash/splash_page.dart';
+import 'package:default_getx/app/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -15,6 +18,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+      home: SplashPage(),
+      initialBinding: SplashBinding(),
+      getPages: AppPages.pages,
     );
   }
 }
